@@ -1,6 +1,6 @@
 """Content-based movie recommendations using MovieLens metadata."""
 
-from __future__ import annotations
+from __future__ import annotations  
 
 import argparse
 import re
