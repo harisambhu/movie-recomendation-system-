@@ -20,7 +20,7 @@ REQUIRED_FILES = {"movies.csv", "tags.csv"}
 
 
 def load_movielens(data_dir: Path = Path("data/ml-latest-small")) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Download/cache MovieLens and load its movie and tag metadata."""
+    """Download/cache MovieLens and load its movie and tag metadata.""" 
     data_dir = Path(data_dir)
     data_dir.mkdir(parents=True, exist_ok=True)
     archive_path = data_dir.parent / "ml-latest-small.zip"
