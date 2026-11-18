@@ -13,7 +13,7 @@ from zipfile import ZipFile
 import certifi
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neighbors import NearestNeighbors
+from sklearn.neighbors import NearestNeighbors 
 
 DATA_URL = "https://files.grouplens.org/datasets/movielens/ml-latest-small.zip"
 REQUIRED_FILES = {"movies.csv", "tags.csv"}
