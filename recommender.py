@@ -29,7 +29,7 @@ def load_movielens(data_dir: Path = Path("data/ml-latest-small")) -> tuple[pd.Da
         with urlopen(DATA_URL, context=ssl.create_default_context(cafile=certifi.where())) as response:
             with archive_path.open("wb") as target:
                 shutil.copyfileobj(response, target)
- 
+  
     with ZipFile(archive_path) as archive:
         members = {}
         for member in archive.infolist():
@@ -128,3 +128,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
