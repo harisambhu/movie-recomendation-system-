@@ -32,7 +32,7 @@ def load_movielens(data_dir: Path = Path("data/ml-latest-small")) -> tuple[pd.Da
   
     with ZipFile(archive_path) as archive:
         members = {}
-        for member in archive.infolist():
+        for member in archive.infolist(): 
             path = PurePosixPath(member.filename)
             if path.name in REQUIRED_FILES:
                 if path.is_absolute() or ".." in path.parts:
